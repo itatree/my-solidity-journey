@@ -1,17 +1,40 @@
-# My Solidity Learning Journey
+# 🌱 My Solidity Learning Journey
 
-Learning Web3 step by step.
+Hi! I'm learning Solidity and Web3.
 
-## Day1
+This repository records my learning progress.
+
+---
+
+## 🚀 Progress
+
+Day1 ✅ First Smart Contract
 
 Milestone 1
-Write first smart contract
+- Write first contract
 
 Milestone 2
-Compile contract
+- Compile successfully
 
 Milestone 3
-Deploy contract
+- Deploy contract
 
 Milestone 4
-Click function works
+- Click function works
+
+---
+
+## 📂 Project Structure
+
+contracts/
+
+---
+
+## 🛠 Tools
+
+- Remix IDE
+- GitHub
+
+---
+
+Learning step by step. Build in public.
