@@ -1,21 +1,16 @@
 /*
-Learning notes
-
-This contract stores a user's name and bio.
-
 Key concepts:
 - string type 字符串类型
 - public variables 公开变量
 - memory keyword 内存关键字
 - how functions update state 函数如何改变区块链状态
 */
-
 // SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.0;
 
 contract SaveMyName{
-//string x是状态变量（意味永久储存）。占位符_使其变成函数参数    
+//string x是状态变量（意味永久储存，存储在链上    
   string name;
   string bio;
 /*function setProfile(string memory _name, string memory _bio) public {
@@ -37,8 +32,12 @@ contract SaveMyName{
 /*为什么 string 一定要写 memory？因为在 Solidity 里：复杂类型必须说明存放位置。
   Storage (存在区块链，永久存储）Memory （存在临时内存，草稿纸，仅在函数运行时存在的临时存储空间，函数结束就消失）
   如果你不写，编译器会报错，因为它不知道你想存储在哪里。*/
+
+  /*占位符_区分状态变量和函数参数，一眼就知道左边是链上数据，右边是输入数据
+  _name用来接收用户输入，name = _name;表示把输入的名字存入状态变量name*/
+  
 function add (string memory _name, string memory _bio )public {
-    name = _name;
+    name = _name;//编程语言中：等于号=是赋值，把右边的值放进左边的变量，而代码方向是 右 → 左 。所有其实是_name → name
     bio = _bio;
   }
   function retrieve() public view returns(string memory, string memory){
