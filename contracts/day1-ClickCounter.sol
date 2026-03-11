@@ -58,8 +58,13 @@ function counter() public view returns (uint) {
 }
 */
     uint256 public counter ;
-
-    function click() public {
+//数据类型 + 可见性 + 变量名
+    function click() public {//()括号里面没东西因为函数没有参数，只是点击一下
         counter++;
     }
 }
+/*几乎所有函数结构都是：
+   function 函数名(输入参数) {
+    代码逻辑
+}
+*/
