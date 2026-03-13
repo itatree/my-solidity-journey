@@ -3,6 +3,7 @@
 1.modifier修饰符 = 可以复用的函数执行规则，给函数加一个“自动检查步骤”包裹函数执行，方便做安检 → 统一规则，少重复，更安全
 2.！表示逻辑取反（NOT）；！=表示不等于
 3.address（0）也叫销毁地址，可以转移token销毁掉
+4.function语法加强版
 */
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
