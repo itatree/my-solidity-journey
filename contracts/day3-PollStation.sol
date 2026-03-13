@@ -2,7 +2,7 @@
 1.数组string[]+映射mapping（
 2.编程语言规则：类型+变量名
 3.编程语言其实本质是：名词（数据）+动词（行为）,比如：string,uint,address/vote(),click(),transfer()
-4.array + mapping 模式，方便查找某人。 *数组负责列表，mapping负责数据（mapping不知道有多少个key，不能遍历，没有length，有默认值）
+4.array + mapping 模式，方便查找某人。 *数组负责列表，mapping负责数据（mapping不知道有多少个key，不能遍历，没有length，有默认值）(不用存index，省gas）
 5.function语法
 */
 // SPDX-License-Identifier: MIT
