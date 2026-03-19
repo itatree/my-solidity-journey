@@ -45,7 +45,7 @@ contract Calculator{
 
     function calculatePower(uint256 base, uint256 exponent)public view returns(uint256){
     //地址强制类型转换（cast）。告诉solidity，这里有个区块链上的地址。我知道它指向一个 ScientificCalculator合约。请把它当作一个合约来处理，这样我才能调用它的函数。
-    ScientificCalculator scientificCalc = ScientificCalculator(scientificCalculatorAddress);//声明变量。类型是ScientificCalculator。然后把地址当成合约来看。
+    ScientificCalculator scientificCalc = ScientificCalculator(scientificCalculatorAddress);//赋值变量。类型是ScientificCalculator。然后把地址当成合约来看。
 
     //external call 外部调用
     uint256 result = scientificCalc.power(base, exponent);
